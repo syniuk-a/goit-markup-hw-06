@@ -884,7 +884,7 @@ img {
 }
 .backdrop.is-hidden {
   opacity: 0;
-  /* pointer-events: none; */
+  pointer-events: none;
   transform: scale(1.1) 5000ms;
 }
 
@@ -931,7 +931,7 @@ img {
   height: 14px;
 }
 .form-line-titel {
-  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: var(--main-font);
   font-style: var(--text-style);
   font-weight: normal;
@@ -1026,7 +1026,7 @@ img {
   color: #ffffff;
 }
 
-.close-modal-button {
+.close-modal-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1040,18 +1040,29 @@ img {
 /* .close-modal-button-icon {
   display: block;
 } */
-.close-modal-button:focus,
-.close-modal-button:hover {
+.close-modal-btn-icon:focus,
+.close-modal-btn-icon:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-.modal-form-line:hover,
 .modal-form-line:focus,
-.modal-form-icon:hover,
-.modal-form-icon:focus {
+.modal-form-line:hover {
+  border-color: var(--accent-color);
+}
+.modal-form-icon:focus,
+.modal-form-icon:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+.modal-form-box:hover,
+.modal-form-box:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+/* .modal-form-box::after {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+} */
 .modal-btn-sub:hover,
 .modal-btn-sub:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
