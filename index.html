@@ -498,32 +498,45 @@
             </button>
             <div>
                 <h3 class="madal-form-title">Оставьте свои данные, мы вам перезвоним</h3>
-                <form class="modal-form" action="#" method="post">
+                <form class="modal-form" action="#" method="post" autocomplete="off">
                     <div class="modal-form-box">
+                        <svg class="modal-form-icon">
+                            <use href="./SVG/icon.svg#icon-person-black-18dp-1"></use>
+                        </svg>
                         <span class="form-line-titel">Имя</span>
-                        <label for="user-name"></label>
-                        <input class="modal-form-line" id="user-name" type="text" name="name" placeholder="Name"
-                            required>
-                        <span class="form-line-titel">Телефон</span>
-                        <label for="user-mail"></label>
-                        <input class="modal-form-line" id="user-mail" type="email" name="mail" placeholder="E-mail"
-                            required>
-                        <!-- <svg class="modal-form-icon">
-                            <use href="./SVG/icon.svg#icon-email-black-18dp-1"></use>
-                        </svg> -->
-                        <span class="form-line-titel">Почта</span>
-                        <label for="user-tel"></label>
-                        <i class="icon-modal-form"></i>
-                        <input class="modal-form-line" id="user-tel" type="tel" name="tel" placeholder="Phone" required
-                            pattern="(0-9)(3)-(0-9)(3)-(0-9)(2)-(0-9)(2)">
-                        <span class="form-line-titel">Ввыедите текст</span>
-                        <textarea class="modal-form-line user-text" name="text" id=""
-                            placeholder="Введите текст"></textarea>
+                        <input class="modal-form-line" id="user-name" type="text" name="name" placeholder="" required>
+                        <label for=" user-name"></label>
                     </div>
+                    <div class="modal-form-box">
+                        <svg class="modal-form-icon">
+                            <use href="./SVG/icon.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                        <span class="form-line-titel">Телефон</span>
+                        <input class="modal-form-line" id="user-mail" type="email" name="mail" placeholder="" l"
+                            required>
+                        <label for="user-mail"></label>
+                    </div>
+                    <div class="modal-form-box">
+                        <svg class="modal-form-icon">
+                            <use href="./SVG/icon.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                        <span class="form-line-titel">Почта</span>
+                        <input class="modal-form-line" id="" type="tel" name="tel" placeholder="" required
+                            pattern=" (0-9)(3)-(0-9)(3)-(0-9)(2)-(0-9)(2)">
+                        <label for="user-tel"></label>
+                    </div>
+                    <!-- <i class="icon-modal-form"></i> -->
+
+                    <span class="form-line-titel">Ввыедите текст</span>
+                    <textarea class="modal-form-line user-text" name="text" id=""
+                        placeholder="Введите текст"></textarea>
+
                     <!-- ====поместить текст сделать хоыеры -->
                     <div class="chek-box">
-                        <input class="chek-text" type="checkbox" name="text" id="" checked>Соглашаюсь с рассылкой и
-                        принимаю Условия договора<Br>
+                        <input class="chek-text" type="checkbox" name="text" id="chek-box"> Соглашаюсь с
+                        рассылкой и
+                        принимаю <a href="#"><label for="policy">Условия договора</label></a>
+                        <label for="chek-box"></label>
                     </div>
                     <div class="modal-btn-box">
                         <button id="" class="modal-btn-sub" type="submit">Отправить</button>
